@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden !important;
+}
+.notecontainer{
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.note{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 300px;
+    box-shadow: 10px 10px 15px rgb(108, 108, 108);
+    /* box-shadow: ; */
+    border-radius: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    
+}
+.note textarea{
+    flex: 1 0 80%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 20px;
+    resize: none;
+
+}
+.note .content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btncontainer{
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+    transition: all 0.5s ease-in-out;
+}
+.btncontainer_active{
+    height: 100px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+
+}
+.btncontainer_active div{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+
+
+    
+}
+.btncontainer div{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+
+
+    
+}
+.mainbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.mainbutton button{
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    color:white;
+    border-radius: 100%;
+}
